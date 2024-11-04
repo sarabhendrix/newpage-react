@@ -1,0 +1,32 @@
+#main-feed {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+#main-feed section {
+    margin-bottom: 30px;
+}
+
+#review {
+    background-color: var(--section-color);
+    width: 500px;
+    max-height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#review h4 {
+    color: var(--accent-color);
+}
+
+@media only screen and (min-width: 760px) {
+    .one{
+        flex:1;
+    }
+    #main-feed section {
+        margin: 40px;
+    }
+}
