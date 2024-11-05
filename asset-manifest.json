@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/newpage/static/css/main.681051e7.css",
+    "main.js": "/newpage/static/js/main.e3e74e88.js",
+    "static/media/Hera.jpg": "/newpage/static/media/Hera.5a72bf1c18f9b04ab4f4.jpg",
+    "static/media/chart.png": "/newpage/static/media/chart.3e621af5820bb348da06.png",
+    "static/media/filter": "/newpage/static/media/filter.52f6c4cd804d073856a2",
+    "index.html": "/newpage/index.html",
+    "main.681051e7.css.map": "/newpage/static/css/main.681051e7.css.map",
+    "main.e3e74e88.js.map": "/newpage/static/js/main.e3e74e88.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.681051e7.css",
+    "static/js/main.e3e74e88.js"
+  ]
+}
