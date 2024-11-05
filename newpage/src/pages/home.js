@@ -1,10 +1,10 @@
-import './App.css';
-import Review from './components/Review.js';
+import '../App.js';
+import '../styles/home.css'
+import Review from '../components/Review.js';
 
 function App() {
   return (
     <div>
-      <h1>Hello World</h1>
       <Review />
       <Review />
       <Review />

@@ -1,0 +1,24 @@
+#search-and-suggest{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+#search-input{
+    background-color: var(--section-color);
+    width: 400px;
+    height: 50px;
+}
+
+#filter{
+    width: 50px;
+    height: auto;
+}
+
+@media only screen and (min-width: 760px) {
+    #browse-content{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}

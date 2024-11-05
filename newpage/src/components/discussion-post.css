@@ -1,0 +1,8 @@
+#book-cover img{
+    height: 400px;
+    width: auto;
+}
+#synopsis{
+    margin-left: 5px;
+    padding: 30px;
+}

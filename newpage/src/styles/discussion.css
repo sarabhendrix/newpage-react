@@ -1,0 +1,30 @@
+#search-and-suggest{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+#search-input{
+    background-color: var(--section-color);
+    width: 400px;
+    height: 50px;
+}
+
+#discussion{
+    margin-top: 40px;
+}
+
+#discussion section{
+    margin-bottom: 20px;
+}
+
+#reply{
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 760px) {
+    #discussion{
+        flex-direction: column;
+    }
+}
