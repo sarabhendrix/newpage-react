@@ -1,45 +1,31 @@
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import "./book-section.css";
-import cover from "../images/Hera.jpg";
+import Book from "../components/book";
 
 function Section() {
+    const [books, setBooks] = useState([]);
+
+    useEffect(() => {
+        (async () => {
+          const response = await axios.get(
+            "https://newpage-backend-t8r6.onrender.com/api/books"
+          );
+          console.log(response.data)
+          setBooks(response.data);
+          console.log(books);
+        })();
+      }, []);
+
     return(
         <section id="results-larger" className="two">
-            <section id="small-book" class="one">
-                <img id="profile-image" src={cover} alt="book cover"></img>
-                <h5>Hera</h5>
-            </section>
-            <section id="small-book" class="one">
-                <img id="profile-image" src={cover} alt="book cover"></img>
-                <h5>Hera</h5>
-            </section>
-            <section id="small-book" class="one">
-                <img id="profile-image" src={cover} alt="book cover"></img>
-                <h5>Hera</h5>
-            </section>
-            <section id="small-book" class="one">
-                <img id="profile-image" src={cover} alt="book cover"></img>
-                <h5>Hera</h5>
-            </section>
-            <section id="small-book" class="one">
-                <img id="profile-image" src={cover} alt="book cover"></img>
-                <h5>Hera</h5>
-            </section>
-            <section id="small-book" class="one">
-                <img id="profile-image" src={cover} alt="book cover"></img>
-                <h5>Hera</h5>
-            </section>
-            <section id="small-book" class="one">
-                <img id="profile-image" src={cover} alt="book cover"></img>
-                <h5>Hera</h5>
-            </section>
-            <section id="small-book" class="one">
-                <img id="profile-image" src={cover} alt="book cover"></img>
-                <h5>Hera</h5>
-            </section>
-            <section id="small-book" class="one">
-                <img id="profile-image" src={cover} alt="book cover"></img>
-                <h5>Hera</h5>
-            </section>
+            {books.map((book) => (
+                <Book
+                    key={book.id}
+                    title={book.title}
+                    imagePath={book.imagePath}
+                />
+            ))}
         </section>
     );
 }

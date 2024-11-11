@@ -7,7 +7,7 @@ const Browse = () => {
     return (
         <section id="browse-content" className="columns">
             <div>
-                <section id="search-and-suggest" class="two">
+                <section id="search-and-suggest" className="two">
                     <input type="text" id="search-input" placeholder="Search here..."></input>
                     <section id="filters"><img id="filter" src={filter} alt="filters"></img></section>
                 </section>
