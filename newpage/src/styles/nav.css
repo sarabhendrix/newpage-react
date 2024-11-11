@@ -1,6 +1,25 @@
-#nav-items {
-    display: flex; 
+#nav-items li {
+    display: flex;
     flex-direction: column;
+}
+
+#toggle {
+    left: 5px;
+    background: #5d878c;
+    width: fit-content;
+    padding: 1px 3px;
+    margin-bottom: 2px;
+}
+  
+#toggle div {
+    width: 25px;
+    height: 2px;
+    background: white;
+    margin: 6px 0;
+}
+
+.hide-small {
+    display: none;
 }
 
 @media only screen and (min-width: 760px) {
@@ -10,5 +29,17 @@
     }
     #main-nav ul{
         justify-content: space-around;
+    }
+    #toggle {
+        display: none;
+    }
+    
+    .hide-small {
+        display: flex;
+    }
+    
+    #main-nav li {
+        display: inline-block;
+        border-bottom: none;
     }
 }

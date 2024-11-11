@@ -1,0 +1,34 @@
+#contact-form {
+    background: #22758c;
+    width: fit-content;
+    padding: 50px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+form {
+    margin: 0 2%;
+}
+  
+form label {
+    font-size: 1em;
+    display: block;
+}
+
+form input:not([type="checkbox"]):not([type="radio"]),
+form textarea,
+form button,
+select {
+    font-size: 0.75em;
+    width: 200px;
+    padding: 5px;
+}
+
+.inline {
+    display: inline;
+}
+
+form textarea {
+    min-height: 200px;
+}
