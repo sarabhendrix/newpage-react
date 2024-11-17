@@ -5,7 +5,7 @@ import Section from "../components/mini-book-section";
 const MyBooks = () => {
     return (
         <section id="library-content">
-            <div class="columns">
+            <div className="columns">
                 <Search />
                 <Section />
             </div>

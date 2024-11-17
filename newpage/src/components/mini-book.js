@@ -2,7 +2,8 @@ import "./mini-book.css";
 import React, { useEffect } from "react";
 
 const Book = (book) => {
-    const imageSrc = `https://newpage-backend-t8r6.onrender.com/${book.imagePath}`
+    //const imageSrc = `https://newpage-backend-t8r6.onrender.com/${book.imagePath}`
+    const imageSrc = `http://localhost:3001/${book.imagePath}`
     return(
         <section id="mini-book" class="one">
             <img id="profile-image" src={imageSrc} alt={book.title}></img>

@@ -28,9 +28,6 @@ const Layout = () => {
             <Link to="/mybooks">My Books</Link>
           </li>
           <li>
-            <Link to="/addbook">Add Book</Link>
-          </li>
-          <li>
             <Link to="/browse">Browse</Link>
           </li>
           <li>
@@ -38,6 +35,9 @@ const Layout = () => {
           </li>
           <li>
             <Link to="/analytics">Analytics</Link>
+          </li>
+          <li>
+            <Link to="/addbook">Add Book</Link>
           </li>
         </ul>
       </nav>
