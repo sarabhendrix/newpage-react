@@ -9,8 +9,8 @@ function Section() {
     useEffect(() => {
         (async () => {
           const response = await axios.get(
-            "http://localhost:3001/api/books"
-            //"https://newpage-backend-t8r6.onrender.com/api/books"
+            //"http://localhost:3001/api/books"
+            "https://newpage-backend-t8r6.onrender.com/api/books"
           );
           console.log(response.data)
           setBooks(response.data);
