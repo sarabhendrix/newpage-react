@@ -27,9 +27,13 @@ const AddBook = () => {
         setResult("Sending....");
         const formData = new FormData(event.target);
     
-        const response = await fetch("http://localhost:3001/api/books", {
-          method: "POST",
-          body: formData,
+        //const response = await fetch("http://localhost:3001/api/books", {
+          //method: "POST",
+          //body: formData,
+        //});
+        const response = await fetch("https://newpage-backend-t8r6.onrender.com/api/books", {
+            method: "POST",
+            body: formData,
         });
     
         if (response.status === 200) {
