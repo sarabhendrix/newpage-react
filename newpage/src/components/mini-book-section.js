@@ -17,7 +17,7 @@ function Section() {
       }, []);
       
     return(
-        <section id="results" className="two">
+        <section id="results" class="two">
              {books.map((book) => (
                 <Book
                     key={book._id}
