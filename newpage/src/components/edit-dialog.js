@@ -31,11 +31,17 @@ const EditBook = (props) => {
     
         const formData = new FormData(event.target);
         console.log(...formData);
+        
+        const response = await fetch(`https://newpage-backend-t8r6.onrender.com/api/books/${props._id}`,{
+          method:"PUT",
+          body:formData
+        });
+        /*
         const response = await fetch(`http://localhost:3001/api/books/${props._id}`,{
           method:"PUT",
           body:formData
         });
-    
+        */
         if(response.status === 200){
           setResult("Book successfully updated");
           event.target.reset();
