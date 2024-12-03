@@ -12,9 +12,7 @@ function Section() {
             //"http://localhost:3001/api/books"
             "https://newpage-backend-t8r6.onrender.com/api/books"
           );
-          console.log(response.data)
           setBooks(response.data);
-          console.log(books);
         })();
       }, []);
       
@@ -22,8 +20,12 @@ function Section() {
         <section id="results" className="two">
              {books.map((book) => (
                 <Book
-                    key={book.id}
+                    key={book._id}
+                    _id={book._id}
                     title={book.title}
+                    description={book.description}
+                    genre={book.genre}
+                    rating={book.rating}
                     imagePath={book.imagePath}
                 />
             ))}

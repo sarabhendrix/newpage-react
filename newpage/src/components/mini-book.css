@@ -5,3 +5,21 @@
 #results section h5{
     text-align: center;
 }
+
+#change-buttons {
+    display: flex;             /* Keep the buttons in a row */
+    gap: 10px;
+    position: relative;
+    bottom: 20px;                 /* Add space between the buttons */
+    left: 40px;
+}
+
+#info{
+    text-align: center;
+}
+
+@media only screen and (min-width: 760px){
+    #change-buttons{
+        left: 95px;
+    }
+}

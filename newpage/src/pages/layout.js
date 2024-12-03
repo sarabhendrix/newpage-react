@@ -8,7 +8,6 @@ const Layout = () => {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    console.log(menuOpen);
   };
 
   return (
